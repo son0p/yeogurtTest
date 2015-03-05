@@ -12,6 +12,12 @@ var talent = function(req, res) {
   res.sendFile(path.join(settings.staticAssets, '/pasabordo.html'), { root: settings.root });
 };
 
+var fonseca = function(req, res) {
+    res.sendFile(path.join(settings.staticAssets, '/fonseca.html'), { root: settings.root });
+};
+
+
 module.exports = {
-  talent: talent
+  talent: talent,
+  fonseca: fonseca
 };

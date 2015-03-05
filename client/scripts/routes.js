@@ -1,3 +1,4 @@
+
 'use strict';
 
 var App = App || {};
@@ -12,7 +13,10 @@ App.Routers.Main = Backbone.Router.extend({
     'signup': 'signup',
     'settings': 'settings',
     '': 'index',
-    'pasabordo': 'pasabordo'
+    'pasabordo': 'pasabordo',
+    'fonseca': 'fonseca',
+    'songForm': 'songForm',
+    'song':'song'
   },
   index: function() {
     var homePage = new App.Views.Default({
@@ -30,6 +34,33 @@ App.Routers.Main = Backbone.Router.extend({
       }
     });
     App.render(pasabordoPage);
+  },
+
+ fonseca: function() {
+    var fonsecaPage = new App.Views.Default({
+      subviews: {
+        '.content': new App.Views.fonseca()
+      }
+    });
+    App.render(fonsecaPage);
+  },
+
+ songForm: function() {
+    var songFormPage = new App.Views.Default({
+      subviews: {
+        '.content': new App.Views.songForm()
+      }
+    });
+    App.render(songFormPage);
+  },
+
+song: function() {
+    var songPage = new App.Views.Default({
+      subviews: {
+        '.content': new App.Views.song()
+      }
+    });
+    App.render(songPage);
   },
 
   login: function() {

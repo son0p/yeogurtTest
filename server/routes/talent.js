@@ -10,6 +10,7 @@ var talentController = require('../controllers/talent');
 var routes = function(app) {
   // Account
    app.get('/pasabordo', talentController.talent);
+   app.get('/fonseca', talentController.fonseca);
   // app.post('/login', accountController.postLogin);
   // app.get('/forgot', accountController.forgot);
   // app.post('/forgot', accountController.postForgot);

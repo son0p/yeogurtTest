@@ -38,6 +38,7 @@ var readAccount = function(req, res, next) {
  */
 
 var createAccount = function(req, res, next) {
+    console.log(req.body);
   req.assert('email', 'Email is not valid').isEmail();
   req.assert('password', 'Password must be at least 6 characters long').len(6);
   req.assert('confirmPassword', 'Passwords do not match').equals(req.body.password);

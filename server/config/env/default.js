@@ -33,7 +33,7 @@ var defaults = {
   },
   database: {
     // URL to connect to database
-    url: process.env.DBURL || 'mongodb://localhost:27017/yeogurt_db',
+    url: process.env.DBURL || 'mongodb://localhost:27017/yo',
     // Mongoose database options
     options: {
       server: {
