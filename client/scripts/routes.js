@@ -54,10 +54,11 @@ App.Routers.Main = Backbone.Router.extend({
     App.render(songFormPage);
   },
 
-song: function() {
-    var songPage = new App.Views.Default({
+  song: function() {
+      alert("llego del servidor");
+  var songPage = new App.Views.Default({
       subviews: {
-        '.content': new App.Views.song()
+        '.content': new App.Views.Song()
       }
     });
     App.render(songPage);
