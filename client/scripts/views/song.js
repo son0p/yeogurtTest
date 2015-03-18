@@ -16,12 +16,11 @@ App.Views.Song = Backbone.View.extend({
     this.render();
   },
 
- 
+
   render: function() {
-      alert("hola");
     this.$el.html(this.template({
       song: App.song.toJSON()
-	
+
     }));
     return this;
   }
